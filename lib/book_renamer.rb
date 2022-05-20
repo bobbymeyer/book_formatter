@@ -9,7 +9,7 @@ end
 
 def rename_book(book, book_data)
   authors = book_data.authors.split(",").first(2).join(", ")
-  year = book_data.published_date[0, 4]
+  year = book_data.published_date.nil? ? nil : book_data.published_date[0, 4]
   title = book_data.title.split[0...16].join(' ')
   full_title = [title, authors, book_data.publisher, year].compact.join(' - ')
   if full_title.empty?
