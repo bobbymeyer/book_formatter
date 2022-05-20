@@ -2,7 +2,7 @@
 A simple command-line tool for creating consistently formatted filenames for large collections of PDFs and EPUB files.
 
 The script does the following...
-- Looks up the filename on Google Books, specifically Title(s), Author(s), Publisher and Date Published.
+- Looks up the filename on Google Books and pulls publication data: Title(s), Author(s), Publisher and Date Published.
 - Santize the Filename to avoid troublesome characters.
 - Shortens very long titles.
 - Renames the file with the following format "TITLE - AUTHORS - PUBLISHER - YEAR PUBLISHED"
